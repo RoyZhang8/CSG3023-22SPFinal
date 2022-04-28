@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 215209003}
   - component: {fileID: 215209002}
   - component: {fileID: 215209001}
+  - component: {fileID: 215209005}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -330,6 +331,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &215209005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215209000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f09a787a427bcf4a9a3f392c69e572e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectSound: {fileID: 8300000, guid: 77414cad08629ff46a091f94f49d8939, type: 3}
+  ballTxt: {fileID: 262223375}
+  numberOfBalls: 0
+  paddle: {fileID: 1076259274}
+  ball: {fileID: 157111173088992840, guid: 42033560ad002b145821c355d0a91983, type: 3}
+  score: 0
+  scoreTxt: {fileID: 1324228715}
+  intialForce: 10
+  speed: 10
 --- !u!1 &262223373
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +815,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1076259274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2130852922960342969, guid: 4d01d590471cd8f4595b333f9f14a272, type: 3}
+  m_PrefabInstance: {fileID: 705209974}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1076259281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076259274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f09a787a427bcf4a9a3f392c69e572e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectSound: {fileID: 8300000, guid: 77414cad08629ff46a091f94f49d8939, type: 3}
+  ballTxt: {fileID: 262223375}
+  numberOfBalls: 10
+  paddle: {fileID: 1076259274}
+  ball: {fileID: 157111173088992840, guid: 42033560ad002b145821c355d0a91983, type: 3}
+  score: 0
+  scoreTxt: {fileID: 1324228715}
+  intialForce: 10
+  speed: 10
 --- !u!1 &1138263892
 GameObject:
   m_ObjectHideFlags: 0

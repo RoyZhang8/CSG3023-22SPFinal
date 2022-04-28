@@ -18,7 +18,8 @@ public class BrickSpawner : MonoBehaviour
    
     public GameObject brickPrefab; 
     public float paddingBetweenBricks = 0.25f; 
-    private Vector2 brickPadding = new Vector2(0,0);  
+    private Vector2 brickPadding = new Vector2(0,0);
+    private GameObject brickGo;
 
 
     // Start is called before the first frame update
@@ -34,9 +35,10 @@ public class BrickSpawner : MonoBehaviour
         {
             for(int x=0; x < 7; x++)
             {
-                Vector3 pos = new Vector3(x * brickPadding.x , y * brickPadding.y, 0); 
-              
-                brickGo = Instantiate.brickPrefab; 
+                Vector3 pos = new Vector3(x * brickPadding.x , y * brickPadding.y, 0);
+               
+
+                brickGo = Instantiate(brickPrefab, pos, Quaternion.Euler(0,0,0)); 
               
                 brickGo.transform.parent = transform; 
                 brickGo.transform.localPosition = pos; 
